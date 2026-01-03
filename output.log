@@ -1,0 +1,387 @@
+﻿
+> joesite@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" "C:
+\Users\blasc\AppData\
+Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (:String   
+ ) [], RemoteExce    
+ption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+> Build error 
+occurred
+Error: Turbopack 
+build failed with 2 
+errors:
+./app/globals.css
+Error evaluating 
+Node.js code
+Error: Cannot find 
+module '../lightningc
+ss.win32-x64-msvc.nod
+e'
+Require stack:
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+node_modules\lightnin
+gcss\node\index.js
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+node_modules\@tailwin
+dcss\node\dist\index.
+js
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+node_modules\@tailwin
+dcss\postcss\dist\ind
+ex.js
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+.next\build\chunks\[r
+oot-of-the-server]__5
+1225daf._.js
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+.next\build\chunks\[t
+urbopack]_runtime.js
+- C:\Users\blasc\OneD
+rive\Desktop\joesite\
+.next\build\postcss.j
+s
+    [at Function._res
+olveFilename (node:in
+ternal/modules/cjs/lo
+ader:1383:15)]
+    [at 
+defaultResolveImpl (n
+ode:internal/modules/
+cjs/loader:1025:19)]
+    [at resolveForCJS
+WithHooks (node:inter
+nal/modules/cjs/loade
+r:1030:22)]
+    [at 
+Function._load (node:
+internal/modules/cjs/
+loader:1192:37)]
+    [at TracingChanne
+l.traceSync (node:dia
+gnostics_channel:322:
+14)]
+    [at 
+wrapModuleLoad (node:
+internal/modules/cjs/
+loader:237:24)]
+    [at 
+Module.require (node:
+internal/modules/cjs/
+loader:1463:12)]
+    [at require (node
+:internal/modules/hel
+pers:147:16)]
+    [at 
+Object.<anonymous> (C
+:\Users\blasc\OneDriv
+e\Desktop\joesite\nod
+e_modules\lightningcs
+s\node\index.js:22:22
+)]
+    [at 
+Module._compile (node
+:internal/modules/cjs
+/loader:1706:14)]
+
+Import trace:
+  Client Component 
+Browser:
+    
+./app/globals.css 
+[Client Component 
+Browser]
+    ./app/layout.tsx 
+[Server Component]
+
+
+./emails/lead-notific
+ation.tsx:1:1
+Module not found: 
+Can't resolve '@react
+-email/components'
+[0m[31m[1m>[22m[
+39m[90m  1 |[39m 
+[36mimport[39m {
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m
+[31m[1m>[22m[39m
+[90m  2 |[39m     [
+33mHtml[39m[33m,[3
+9m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  3 |[39m     [
+33mBody[39m[33m,[3
+9m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  4 |[39m     [
+33mHead[39m[33m,[3
+9m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  5 |[39m     [
+33mHeading[39m[33m,
+[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  6 |[39m     [
+33mHr[39m[33m,[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  7 |[39m     [
+33mContainer[39m[33
+m,[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  8 |[39m     [
+33mPreview[39m[33m,
+[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m  9 |[39m     [
+33mSection[39m[33m,
+[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m 10 |[39m     [
+33mText[39m[33m,[3
+9m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m 11 |[39m     [
+33mColumn[39m[33m,
+[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m 12 |[39m     [
+33mRow[39m[33m,[39
+m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m 13 |[39m     [
+33mTailwind[39m[33m
+,[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m
+[31m[1m>[22m[39m
+[90m 14 |[39m } 
+[36mfrom[39m [32m"
+@react-email/componen
+ts"[39m[33m;[39m
+ [90m    |[39m [31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22
+m[39m[31m[1m^[22m
+[39m[31m[1m^[22m
+[39m[31m[1m^[22m[
+39m[31m[1m^[22m[3
+9m[31m[1m^[22m[39
+m[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m[
+31m[1m^[22m[39m[3
+1m[1m^[22m[39m[31
+m[1m^[22m[39m[31m
+[1m^[22m[39m[31m
+[1m^[22m[39m[31m[
+1m^[22m[39m[31m[1
+m^[22m[39m[31m[1m
+^[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^[
+22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22
+m[39m[31m[1m^[22m
+[39m[31m[1m^[22m
+[39m
+ [90m 15 |[39m 
+[36mimport[39m 
+[33m*[39m 
+[36mas[39m 
+[33mReact[39m 
+[36mfrom[39m [32m"
+react"[39m[33m;[39
+m
+ [90m 16 |[39m 
+[36mimport[39m 
+type { [33mLeadFormD
+ata[39m } 
+[36mfrom[39m [32m"
+@/lib/validations"[3
+9m[33m;[39m
+ [90m 17 |[39m 
+[36mimport[39m { 
+coverageAmountLabels 
+} [36mfrom[39m [32
+m"@/lib/validations"
+[39m[33m;[39m[0m
+
+
+
+Import trace:
+  App Route:
+    ./emails/lead-not
+ification.tsx
+    ./lib/email.ts
+    ./app/api/lead/ro
+ute.ts
+
+https://nextjs.org/do
+cs/messages/module-no
+t-found
+
+
+    at <unknown> (./e
+mails/lead-notificati
+on.tsx:1:1)
+    at <unknown> (htt
+ps://nextjs.org/docs/
+messages/module-not-f
+ound)

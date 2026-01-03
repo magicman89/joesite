@@ -1,0 +1,27 @@
+import * as React from "react";
+import { cn } from "@/lib/utils";
+
+export interface InputProps
+    extends React.InputHTMLAttributes<HTMLInputElement> {
+    error?: boolean;
+}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+    ({ className, type, error, ...props }, ref) => {
+        return (
+            <input
+                type={type}
+                className={cn(
+                    "flex h-12 w-full rounded-lg border-2 border-border bg-background px-4 py-3 text-base ring-offset-background transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary-light disabled:cursor-not-allowed disabled:opacity-50",
+                    error && "border-error focus-visible:border-error focus-visible:ring-red-100",
+                    className
+                )}
+                ref={ref}
+                {...props}
+            />
+        );
+    }
+);
+Input.displayName = "Input";
+
+export { Input };
