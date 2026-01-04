@@ -15,8 +15,8 @@ export function Footer() {
     const companyLinks = [
         { href: "#how-it-works", label: "How It Works" },
         { href: "#testimonials", label: "Testimonials" },
-        { href: "#", label: "About Us" }, // TODO: Add About page
-        { href: "#", label: "Contact" }, // TODO: Add Contact page or section
+        { href: "#how-it-works", label: "About Us" },
+        { href: "#testimonials", label: "Contact" },
     ];
 
     const legalLinks = [
@@ -36,8 +36,8 @@ export function Footer() {
                             <Image
                                 src="/logo-icon.png"
                                 alt="Try Family Life"
-                                width={48}
-                                height={48}
+                                width={64}
+                                height={64}
                                 className="rounded-xl"
                             />
                             <span className="text-2xl font-serif font-bold">

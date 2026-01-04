@@ -69,6 +69,8 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
+          enableSystem={false}
+          storageKey="tryfamilylife-theme"
           disableTransitionOnChange
         >
           {children}
