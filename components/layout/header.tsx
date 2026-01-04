@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, Shield } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
@@ -44,9 +45,13 @@ export function Header({ onGetStarted }: HeaderProps) {
                 <div className="flex items-center justify-between h-16 lg:h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                            <Shield className="w-6 h-6 text-white" />
-                        </div>
+                        <Image
+                            src="/logo-icon.png"
+                            alt="Try Family Life"
+                            width={40}
+                            height={40}
+                            className="rounded-xl shadow-lg group-hover:shadow-xl transition-shadow"
+                        />
                         <span className="text-xl font-serif font-bold text-foreground hidden sm:block">
                             Try Family Life
                         </span>

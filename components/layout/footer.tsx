@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Shield, Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
@@ -32,11 +33,15 @@ export function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center">
-                                <Shield className="w-6 h-6 text-white" />
-                            </div>
+                            <Image
+                                src="/logo-icon.png"
+                                alt="Try Family Life"
+                                width={40}
+                                height={40}
+                                className="rounded-xl"
+                            />
                             <span className="text-xl font-serif font-bold">
-                                Future Covered
+                                Try Family Life
                             </span>
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -52,11 +57,11 @@ export function Footer() {
                                 <span className="text-sm">1-800-555-0123</span>
                             </a>
                             <a
-                                href="mailto:support@futurecovered.com"
+                                href="mailto:support@tryfamilylife.com"
                                 className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
                             >
                                 <Mail className="w-4 h-4" />
-                                <span className="text-sm">support@futurecovered.com</span>
+                                <span className="text-sm">support@tryfamilylife.com</span>
                             </a>
                             <div className="flex items-center gap-3 text-gray-400">
                                 <MapPin className="w-4 h-4" />
@@ -123,7 +128,7 @@ export function Footer() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-gray-400 text-sm text-center md:text-left">
-                            © {currentYear} Future Covered. All rights reserved.
+                            © {currentYear} Try Family Life. All rights reserved.
                         </p>
                         <p className="text-gray-500 text-xs text-center md:text-right max-w-2xl">
                             Life insurance products are offered through licensed insurance agents.
