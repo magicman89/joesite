@@ -6,23 +6,23 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     const coverageLinks = [
-        { href: "#", label: "Life Insurance" },
-        { href: "#", label: "Mortgage Protection" },
-        { href: "#", label: "Final Expense" },
-        { href: "#", label: "Living Benefits" },
+        { href: "#coverage", label: "Life Insurance" },
+        { href: "#coverage", label: "Mortgage Protection" },
+        { href: "#coverage", label: "Final Expense" },
+        { href: "#benefits", label: "Living Benefits" },
     ];
 
     const companyLinks = [
         { href: "#how-it-works", label: "How It Works" },
         { href: "#testimonials", label: "Testimonials" },
-        { href: "#", label: "About Us" },
-        { href: "#", label: "Contact" },
+        { href: "#", label: "About Us" }, // TODO: Add About page
+        { href: "#", label: "Contact" }, // TODO: Add Contact page or section
     ];
 
     const legalLinks = [
-        { href: "#", label: "Privacy Policy" },
-        { href: "#", label: "Terms of Service" },
-        { href: "#", label: "Disclosures" },
+        { href: "/privacy", label: "Privacy Policy" },
+        { href: "/terms", label: "Terms of Service" },
+        { href: "/disclosures", label: "Disclosures" },
     ];
 
     return (
