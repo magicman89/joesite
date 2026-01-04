@@ -63,6 +63,13 @@ export function Header({ onGetStarted }: HeaderProps) {
                             <Link
                                 key={link.href}
                                 href={link.href}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    const target = document.querySelector(link.href);
+                                    if (target) {
+                                        target.scrollIntoView({ behavior: "smooth" });
+                                    }
+                                }}
                                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {link.label}
@@ -104,7 +111,14 @@ export function Header({ onGetStarted }: HeaderProps) {
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setIsMobileMenuOpen(false);
+                                        const target = document.querySelector(link.href);
+                                        if (target) {
+                                            target.scrollIntoView({ behavior: "smooth" });
+                                        }
+                                    }}
                                     className="px-4 py-3 text-base font-medium text-foreground hover:bg-muted rounded-lg transition-colors"
                                 >
                                     {link.label}
