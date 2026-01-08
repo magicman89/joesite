@@ -6,6 +6,7 @@ import { ProgressBar } from "./progress-bar";
 import { StepInsurance } from "./steps/step-insurance";
 import { StepGender } from "./steps/step-gender";
 import { StepCoverage } from "./steps/step-coverage";
+import { StepMortgagePayment } from "./steps/step-mortgage-payment";
 import { StepDob } from "./steps/step-dob";
 import { StepTobacco } from "./steps/step-tobacco";
 import { StepZipcode } from "./steps/step-zipcode";
@@ -36,16 +37,18 @@ export function LeadForm({ onClose }: LeadFormProps) {
             case 3:
                 return <StepCoverage />;
             case 4:
-                return <StepDob />;
+                return <StepMortgagePayment />;
             case 5:
-                return <StepTobacco />;
+                return <StepDob />;
             case 6:
-                return <StepZipcode />;
+                return <StepTobacco />;
             case 7:
-                return <StepPhone />;
+                return <StepZipcode />;
             case 8:
-                return <StepName />;
+                return <StepPhone />;
             case 9:
+                return <StepName />;
+            case 10:
                 return <StepEmail />;
             default:
                 return <StepInsurance />;

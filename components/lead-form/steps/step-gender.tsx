@@ -21,8 +21,7 @@ export function StepGender() {
     return (
         <StepWrapper>
             <StepQuestion
-                question="Excellent! And are you a man or a woman?"
-                subtext="This affects your rate calculation"
+                question="Excellent, and are you a man or a woman?"
             />
             <div className="space-y-3">
                 {options.map((option) => (

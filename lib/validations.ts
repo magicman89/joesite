@@ -24,14 +24,23 @@ export const genderSchema = z.enum(["woman", "man"], {
 });
 
 export const coverageAmountSchema = z.enum([
-    "under_10000",
-    "10001_25000",
-    "25001_50000",
-    "50001_100000",
+    "under_100000",
     "100001_250000",
-    "250001_plus",
+    "250001_500000",
+    "500001_1000000",
+    "more_than_1000000",
 ], {
-    message: "Please select a coverage amount",
+    message: "Please select an amount",
+});
+
+export const mortgagePaymentSchema = z.enum([
+    "under_1500",
+    "1500_2499",
+    "2500_3499",
+    "3500_4999",
+    "5000_plus",
+], {
+    message: "Please select a monthly payment",
 });
 
 export const dateOfBirthSchema = z.string()
@@ -84,6 +93,7 @@ export const leadFormSchema = z.object({
     has_insurance: hasInsuranceSchema,
     gender: genderSchema,
     coverage_amount: coverageAmountSchema,
+    mortgage_payment: mortgagePaymentSchema.optional(), // New field
     date_of_birth: dateOfBirthSchema,
     tobacco_use: tobaccoUseSchema,
     zip_code: zipCodeSchema,
@@ -104,15 +114,24 @@ export type LeadFormData = z.infer<typeof leadFormSchema>;
 export type HasInsurance = z.infer<typeof hasInsuranceSchema>;
 export type Gender = z.infer<typeof genderSchema>;
 export type CoverageAmount = z.infer<typeof coverageAmountSchema>;
+export type MortgagePayment = z.infer<typeof mortgagePaymentSchema>;
 export type TobaccoUse = z.infer<typeof tobaccoUseSchema>;
 export type LeadSource = z.infer<typeof leadSourceSchema>;
 
-// Coverage amount display labels
+// Coverage amount display labels (Now Mortgage Amount)
 export const coverageAmountLabels: Record<CoverageAmount, string> = {
-    under_10000: "Under $10,000",
-    "10001_25000": "$10,001 - $25,000",
-    "25001_50000": "$25,001 - $50,000",
-    "50001_100000": "$50,001 - $100,000",
+    under_100000: "Under $100,000",
     "100001_250000": "$100,001 - $250,000",
-    "250001_plus": "$250,001+",
+    "250001_500000": "$250,001 - $500,000",
+    "500001_1000000": "$500,001 - $1,000,000",
+    "more_than_1000000": "More Than $1,000,000",
+};
+
+// Mortgage Payment labels
+export const mortgagePaymentLabels: Record<MortgagePayment, string> = {
+    under_1500: "Under $1,500 / month",
+    "1500_2499": "$1,500 - $2,499 / month",
+    "2500_3499": "$2,500 - $3,499 / month",
+    "3500_4999": "$3,500 - $4,999 / month",
+    "5000_plus": "$5,000+ / month",
 };

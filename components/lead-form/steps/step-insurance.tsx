@@ -5,9 +5,8 @@ import { StepWrapper, StepQuestion } from "../step-wrapper";
 import { SelectionButton } from "@/components/ui/radio-group";
 
 const options = [
-    { value: "yes", label: "Yes, I have a mortgage" },
-    { value: "no", label: "No, I don't have a mortgage" },
-    { value: "unsure", label: "I'm not sure" },
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
 ];
 
 export function StepInsurance() {
@@ -22,8 +21,7 @@ export function StepInsurance() {
     return (
         <StepWrapper>
             <StepQuestion
-                question="Do you have a mortgage?"
-                subtext="This helps us find the best options for you"
+                question="Do you currently have a mortgage?"
             />
             <div className="space-y-3">
                 {options.map((option) => (
